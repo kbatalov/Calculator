@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div name="Calculator" class="calculator">
+        <div class="row">
+            <input type="text" maxlength='16' class="display" id="display" placeholder="0" autofocus>
+        </div>
+        <div class="row">
+            <input type="button" class="keyboard" value="(" onclick='math("(")'>
+            <input type="button" class="keyboard" value=")" onclick='math(")")'>
+            <input type="button" class="keyboard" value="+ / -" onclick='inv()'>
+            <input type="button" class="keyboard" value="*" onclick='math("*")'>
+        </div>
+        <div class="row">
+            <input type="button" class="keyboard" value="7" onclick='math("7")'>
+            <input type="button" class="keyboard" value="8" onclick='math("8")'>
+            <input type="button" class="keyboard" value="9" onclick='math("9")'>
+            <input type="button" class="keyboard" value="÷" onclick='math("/")'>
+        </div>
+        <div class="row">
+            <input type="button" class="keyboard" value="4" onclick='math("4")'>
+            <input type="button" class="keyboard" value="5" onclick='math("5")'>
+            <input type="button" class="keyboard" value="6" onclick='math("6")'>
+            <input type="button" class="keyboard" value="+" onclick='math("+")'>
+        </div>
+        <div class="row">
+            <input type="button" class="keyboard" value="1" onclick='math("1")'>
+            <input type="button" class="keyboard" value="2" onclick='math("2")'>
+            <input type="button" class="keyboard" value="3" onclick='math("3")'>
+            <input type="button" class="keyboard" value="-" onclick='math("-")'>
+        </div>
+        <div class="row">
+            <input type="button" class="keyboard" value="0" onclick='math("0")'>
+            <input type="button" class="keyboard" value="." onclick='math(".")'>
+            <input type="button" class="keyboard" value="CE" onclick='c("")'>
+            <input type="button" class="keyboard" value="=" onclick='e()'>
+        </div>
+    </div>
+    <script src="js/1.js"></script>
+</body>
+
+</html>
